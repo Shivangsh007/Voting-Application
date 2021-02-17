@@ -153,15 +153,4 @@ congbutton = Button(approot, textvariable = congvariable,bg = "lightgreen",fg = 
 congvariable.set("CONGRESS")
 congbutton.grid(column = 0,row = 42)
 
-
-# frame = Frame(approot,borderwidth = 3,bg = "orange",relief = SUNKEN)
-
-# frame.pack(side = BOTTOM, anchor = "center")
-# b1 = Button(frame,fg = "orange",text = "BJP",padx = 21)
-# b2 = Button(frame,fg = "blue",text = "AAP",padx = 19)
-# b3 = Button(frame,fg = "green",text = "CONGRESS")
-# b1.pack()
-# b2.pack()
-# b3.pack()
-# title_label.pack(fill = "x")
 approot.mainloop()
