@@ -2,8 +2,7 @@ from tkinter import *
 import time
 currenttime = time.ctime()
 
-# with open("F:\\python_everything\\Personal_Projects\\records.txt",'w') as record:
-#     final = record.write()
+
 approot = Tk()
 
 # Width x height
@@ -14,8 +13,6 @@ approot.minsize(300,300)
 approot.maxsize(300,300)
 approot.title("NVC-2021")
 approot.configure(bg = '#FDFD96')
-# Label(approot,text = 'hello').grid(row = 0,column = 0)
-# Label(approot,text = "E L E C T I O N  2 0 2 1",bg = "black",fg = "yellow",padx = 7,font = ("bebasneue",20,"bold"),borderwidth = 5, relief = SUNKEN).grid(row = 0,column = 0)
 
 
 def congress():
