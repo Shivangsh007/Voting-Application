@@ -1,7 +1,8 @@
 import tkinter
 import time
 from drawscreen import create_app
-currenttime = time.ctime()
+from util import vote_party
+current_time = time.ctime()
 
 #config 
 approot = tkinter.Tk()
@@ -16,7 +17,7 @@ approot.title("NVC-2021")
 approot.configure(bg = '#FDFD96')
 
 #draws the screen
-create_app(approot)
+create_app(approot,current_time,vote_party)
 
 #created main loop 
 approot.mainloop()

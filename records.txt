@@ -7,3 +7,7 @@ Tue Feb 16 22:01:25 2021: shivangsh Voted AAP.
 Tue Feb 16 22:04:43 2021: d Voted BJP.
 Tue Feb 16 22:12:43 2021: shivanghs Voted BJP.
 Wed Feb 17 09:35:16 2021: shivangsh dey Voted BJP.
+Sun Dec 26 14:41:25 2021: Amlan Voted congress
+Sun Dec 26 14:42:20 2021: Amlan Voted bjp
+Sun Dec 26 14:43:03 2021: Amlan Voted bjp
+Sun Dec 26 14:49:07 2021: Amlan Voted aap

@@ -1,6 +1,6 @@
 import tkinter as tk 
 
-def create_app(approot):
+def create_app(approot,current_time,vote):
     #draws label to add details
     user = tk.Label(approot,text = "       Full Name:    ",bg = '#AEC6CF',fg = 'white',padx = 1.5)
     phno = tk.Label(approot,text = " Phone Number: ",bg = '#AEC6CF',fg = 'white',padx = 2)
@@ -30,16 +30,16 @@ def create_app(approot):
     votelabel.grid(column = 0,row = 10)
 
     bjpvariable = tk.StringVar()
-    bjpbutton = tk.Button(approot, textvariable = bjpvariable,bg = '#FFB347',fg = 'white',padx = 22)
+    bjpbutton = tk.Button(approot, textvariable = bjpvariable,bg = '#FFB347',fg = 'white',padx = 22, command=lambda : vote(approot,current_time,"bjp",phonenumberentry,usernameentry,ageentry,voteridentry))
     bjpvariable.set("BJP")
     bjpbutton.grid(column = 0,row = 32)
 
     aapvariable = tk.StringVar()
-    aapbutton = tk.Button(approot, textvariable = aapvariable,bg = 'darkgrey',fg = 'white',padx = 19)
+    aapbutton = tk.Button(approot, textvariable = aapvariable,bg = 'darkgrey',fg = 'white',padx = 19,command=lambda : vote(approot,current_time,"aap",phonenumberentry,usernameentry,ageentry,voteridentry))
     aapvariable.set("AAP")
     aapbutton.grid(column = 0 ,row = 12)
 
     congvariable = tk.StringVar()
-    congbutton = tk.Button(approot, textvariable = congvariable,bg = "lightgreen",fg = 'white',padx = 1)
+    congbutton = tk.Button(approot, textvariable = congvariable,bg = "lightgreen",fg = 'white',padx = 1,command=lambda : vote(approot,current_time,"congress",phonenumberentry,usernameentry,ageentry,voteridentry))
     congvariable.set("CONGRESS")
     congbutton.grid(column = 0,row = 42)
