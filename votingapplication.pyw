@@ -1,11 +1,20 @@
-from tkinter import *
+import sys
+if sys.version_info[0] == 3:
+    import tkinter as tk
+else:
+    import Tkinter as tk
 import time
 currenttime = time.ctime()
 
 
-approot = Tk()
-
+approot = tk.Tk()
+Label = tk.Label
+StringVar = tk.StringVar
+IntVar = tk.IntVar
+Entry = tk.Entry
+Button = tk.Button
 # Width x height
+
 approot.geometry("300x300")
 
 # width,height
