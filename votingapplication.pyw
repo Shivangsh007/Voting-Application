@@ -1,6 +1,6 @@
 import tkinter
 import time
-from drawscreen import *
+from drawscreen import create_app
 currenttime = time.ctime()
 
 #config 
@@ -16,8 +16,7 @@ approot.title("NVC-2021")
 approot.configure(bg = '#FDFD96')
 
 #draws the screen
-draw_screen(approot)
-create_button(approot)
+create_app(approot)
 
 #created main loop 
 approot.mainloop()

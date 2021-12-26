@@ -1,6 +1,6 @@
 import tkinter as tk 
 
-def draw_screen(approot):
+def create_app(approot):
     #draws label to add details
     user = tk.Label(approot,text = "       Full Name:    ",bg = '#AEC6CF',fg = 'white',padx = 1.5)
     phno = tk.Label(approot,text = " Phone Number: ",bg = '#AEC6CF',fg = 'white',padx = 2)
@@ -29,9 +29,6 @@ def draw_screen(approot):
     votelabel = tk.Label(approot,text = 'Select the political party: ',bg = '#242B2E',fg = 'white')
     votelabel.grid(column = 0,row = 10)
 
-
-
-def create_button(approot): 
     bjpvariable = tk.StringVar()
     bjpbutton = tk.Button(approot, textvariable = bjpvariable,bg = '#FFB347',fg = 'white',padx = 22)
     bjpvariable.set("BJP")
